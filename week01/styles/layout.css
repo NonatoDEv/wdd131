@@ -5,7 +5,8 @@ body{
     background-color: #41113a;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    margin: 0 auto;
 }
 header{
     grid-column: 1/5;
