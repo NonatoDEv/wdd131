@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 840px;
+    margin:0 auto;
+    padding: 20px;
+    font-size: 19px;
+    
+}
+header{
+    padding: 1rem;
+    background-color: #023047;
+    border-radius: 16px;
+}
+#course-title{
+    background-color: #023047;
+    color: #FFF;
+    font-size: 24px;
+}
+span{
+    display:block;
+    text-align: center;
+}
+nav{
+    background-color:#035477 ;
+    margin: 0 auto 2rem;
+    border-bottom: 2px;
+    border-radius: 8px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display:block;
+    color:#fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 24px;
+}
+nav li:hover{
+    text-decoration: overline #FFB703;
+}
+@media (min-width: 640px){
+    nav ul{
+        display:flex;
+        justify-content: space-around;
+    }
+    nav ul li{
+        flex-grow: 1 1 100%;
+    }
+}
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 1rem;
+
+    
+}
+main h1{
+    text-align: center;  
+    background-color: #023047;
+    color:#fff;
+    grid-area: 1/1/2/3;
+    border-radius: 8px;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    border-radius:16px;
+    background-color: #023047;
+    
+}
+.card header{
+    background-color:#023047;
+    display:flex;
+    justify-content: center;
+    color:#fff;
+    border-radius:16px ;
+    font-size: 24px;
+
+}
+.resume {
+    display:flex;
+    flex-direction: row-reverse;
+    padding:0 0.5rem;
+    align-items: center;
+}
+#profile{
+    border-radius: 50%;
+    max-width: 150px;
+}
+.resume p{
+    color: #fff;
+    text-align: left;
+    margin: 1rem;
+}
+.country{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    place-items:center;
+}
+.country h4{
+    grid-column: 1/4;
+    grid-row: 1;
+    text-align:center;
+    margin:0;
+    color: #fff;
+}
+.country img{
+    width :100px;
+}
+.country p{
+    grid-column: 2/4;
+    color: #fff;
+    text-align: justify;
+    margin:1rem;
+}
+#Resources{
+    justify-self: flex-end;
+}
+div ul{
+    color:#FFF;
+    display:flex;
+    flex-direction: column;
+ }
+footer{
+    background-color:#035477;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+footer p{
+    color:#fff;
+}
