@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
 }
-body{
+.grid{
     background-color: #41113a;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
