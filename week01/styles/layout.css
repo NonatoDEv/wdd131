@@ -11,6 +11,3 @@ body{
 header{
     grid-column: 1/5;
 }
-nav ul{
-    display: flex;
-}
