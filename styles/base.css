@@ -127,9 +127,18 @@ main h1{
     justify-self: flex-end;
 }
 div ul{
-    color:#FFF;
     display:flex;
     flex-direction: column;
+ }
+ div li{
+    color:#fff;
+ }
+ div li:hover{
+    text-decoration: underline #FFB703;
+ }
+ div a{
+    color:#fff;
+    text-decoration: none;
  }
 footer{
     background-color:#035477;
