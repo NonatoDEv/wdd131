@@ -35,14 +35,16 @@ nav ul{
 }
 nav li{
     display:block;
-    color:#fff;
     text-align: center;
     padding: 1rem;
-    text-decoration: none;
     font-size: 24px;
 }
 nav li:hover{
     text-decoration: overline #FFB703;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
 }
 @media (min-width: 640px){
     nav ul{
