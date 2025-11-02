@@ -4,10 +4,27 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    background-color: #2a2420;
+ 
 }
-header main footer {
+header, main, footer {
     max-width: 640px;
     margin: 1rem auto;
-    border-color: 2px #f8f7f4;
+    padding: 1rem;
+    background-color: #2a2420;
+    border: 4px #f8f7f4;
+}
+h1{
+    color:#f8f7f4;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+section{
+    padding: 1rem;
+    background-color: #f8f7f4;
+}
+footer{
+    color:#f8f7f4;
 }
