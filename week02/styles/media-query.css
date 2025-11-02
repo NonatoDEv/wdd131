@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #2a2420;
+}
+header main footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border-color: 2px #f8f7f4;
+}
