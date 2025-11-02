@@ -1,6 +1,8 @@
 @media screen and (min-width: 500px){
     header{
         background-color: #000000;
+    }
+    main{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
