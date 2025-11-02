@@ -10,11 +10,11 @@ header, main, footer {
     max-width: 640px;
     margin: 1rem auto;
     padding: 1rem;
-    background-color: #2a2420;
-    border: 2px solid #f8f7f4;
+    background-color: #397181;
+    border: 2px solid #dceff1;
 }
 h1{
-    color:#f8f7f4;
+    color:#dceff1;
 }
 main{
     display: grid;
@@ -23,8 +23,8 @@ main{
 }
 section{
     padding: 1rem;
-    background-color: #f8f7f4;
+    background-color: #dceff1;
 }
 footer{
-    color:#f8f7f4;
+    color:#dceff1;
 }
