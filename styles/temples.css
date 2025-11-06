@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+header, main, footer {
+    max-width: 480px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #282f43;
+    border: 2px solid #f4f7fa;
+}
+header {
+	background-color:#282f43 ;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px ;
+ }
+#temple-title {
+    font-size: 2rem;
+    color:#f4f7fa;
+}
+nav{
+    background-color: #475886;
+}
+
+h1{
+    color:#f4f7fa;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem; 
+}
+section{
+    padding: 1rem;
+    background-color: #dceff1;
+}
+footer{
+    color:#f1f9fa;
+}
