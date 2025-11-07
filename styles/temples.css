@@ -10,7 +10,6 @@ header, main, footer {
     margin: 1rem auto;
     padding: 1rem;
     background-color: #3e270a;
-    border: 2px solid #f4f7fa;
     border-radius: .5rem;
 }
 header {
