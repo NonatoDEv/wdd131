@@ -102,25 +102,26 @@ main{
 
 .container {
     padding: 1rem;
-    background-color: #000;
+    background-color: #3e270a;
     display:grid; 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     grid-gap: 25px;
     place-items: center;
 }
 figure {
-    background-color: #000;
+    background-color: #f4f7fa;
+    border-radius: .5rem;
 }
 img {
-    border-radius: .5rem;
+    border-radius:.5rem .5rem 0 0;
     filter: blur(4px);
 }
 .blur:hover{
     filter: none; 
-    transition: filter 0.2s ease-in-out;
+    transition: filter 0.3s ease-in-out;
 }    
 figcaption{
-    color:#f4f7fa;
+    color:#3e270a;
     text-align: center;
     margin-top: 0.5rem;
 }
