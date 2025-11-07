@@ -56,7 +56,7 @@ nav a:hover{
 #menu {
 	font-size: 1.5rem;
 	border: 0;
-	background: none;
+	background-color: #3e270a;
 	color: #f4f7fa;
     grid-column: 3/4;
 }
@@ -76,7 +76,6 @@ nav{
 	list-style: none;
 	color: #f4f7fa;
 }
-
 .navigation a {
 	display: none;
 	padding: 1rem;
@@ -88,10 +87,8 @@ nav{
 	background-color: #f6f592;
 	color: #3e270a;
 	font-weight: 700;
-    border: 2px solid #3e270a;
-    
+    border: 2px solid #3e270a;   
 }
-
 .open a {
 	display:block;
 }
