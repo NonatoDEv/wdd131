@@ -72,6 +72,11 @@ figure {
 }
 img {
     border-radius: .5rem;
+    filter: blur(6px);
+}
+.blur:hover{
+    filter: none; 
+    transition: filter 0.2s ease-in-out;
 }    
 figcaption{
     color:#f4f7fa;
