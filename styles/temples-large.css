@@ -15,13 +15,11 @@
     #menu {
 		display: none;
 	}
-
 	.navigation {
 		flex-direction: row;
         background-color: #6a4819;
         gap: 0.35rem;
 	}
-
 	.navigation a {
 		display: block;
 		flex: 1 1 100%;
