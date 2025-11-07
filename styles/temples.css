@@ -120,6 +120,8 @@ figure {
 img {
     border-radius:.5rem .5rem 0 0;
     filter: blur(4px);
+    width: 250px;
+    height: 167px;
 }
 .blur:hover{
     filter: none; 
