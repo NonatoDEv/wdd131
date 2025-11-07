@@ -15,6 +15,7 @@ header, main, footer {
 header {
 	background-color:#3e270a ;
 	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 1rem;
 	padding: 20px;
 	border: 1px solid #000;
