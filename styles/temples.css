@@ -58,7 +58,7 @@ nav a:hover{
 }
 
 #menu.open::before {
-	content: "❎";
+	content: "X";
 }
 
 .navigation {
