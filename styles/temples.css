@@ -51,6 +51,7 @@ nav a:hover{
 }
 h1{
     color:#f4f7fa;
+    text-align: center;
 }
 main{
     display: grid;
