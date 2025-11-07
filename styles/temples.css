@@ -7,10 +7,11 @@ body{
 }
 header, main, footer {
     max-width: 960px;
-    margin: 0.75rem auto;
+    margin: 1rem auto;
     padding: 1rem;
     background-color: #3e270a;
     border: 2px solid #f4f7fa;
+    border-radius: .5rem;
 }
 header {
 	background-color:#3e270a ;
@@ -18,7 +19,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 1rem;
 	padding: 20px;
-	border: 1px solid #000;
+	border: 1px solid #3e270a;
 	box-shadow: 0 0 30px;
 }
 #temple-title {
@@ -42,7 +43,7 @@ nav a{
 nav a:hover{
     text-decoration: underline;
     background-color: #f6f592;
-    color:#000;
+    color:#3e270a;
 }
 .active{
     background-color: #3e270a;
@@ -80,9 +81,9 @@ nav a:hover{
 }
 .navigation a:hover {
 	background-color: #f6f592;
-	color: #fff;
+	color: #3e270a;
 	font-weight: 700;
-    border: 4px solid #000;
+    border: 2px solid #3e270a;
     
 }
 
