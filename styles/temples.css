@@ -120,12 +120,11 @@ figure {
 img {
     border-radius:.5rem .5rem 0 0;
     filter: blur(4px);
-    width: 250px;
-    height: 167px;
+    width: 100%;
 }
 .blur:hover{
     filter: none; 
-    transition: filter 0.3s ease-in-out;
+    transition:filter 0.3s ease-in-out;
 }    
 figcaption{
     color:#3e270a;
