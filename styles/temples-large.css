@@ -5,7 +5,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 630px) {
 	header {
 		display: flex;
 		align-items: center;
