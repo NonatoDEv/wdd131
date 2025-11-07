@@ -97,15 +97,15 @@ main{
     grid-template-columns: 1fr;
     grid-gap: 1rem; 
 }
-section{
+
+.container {
     padding: 1rem;
     background-color: #000;
-}
-.container {
     display:grid; 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     grid-gap: 25px;
-    place-items: center;}
+    place-items: center;
+}
 figure {
     background-color: #000;
 }
