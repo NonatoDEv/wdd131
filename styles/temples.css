@@ -47,7 +47,8 @@ nav a:hover{
 .active{
     background-color: #3e270a;
     color:#f4f7fa;
-}#menu {
+}
+#menu {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
@@ -112,7 +113,7 @@ figure {
 }
 img {
     border-radius: .5rem;
-    filter: blur(6px);
+    filter: blur(4px);
 }
 .blur:hover{
     filter: none; 
@@ -123,7 +124,6 @@ figcaption{
     text-align: center;
     margin-top: 0.5rem;
 }
-
 footer{
     color:#f1f9fa;
 }
