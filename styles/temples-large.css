@@ -27,6 +27,10 @@ body{
 		display: block;
 		flex: 1 1 100%;
 	}
+    .navigation a:hover{
+        border: none;
+
+    }
 	nav ul {
 		justify-content: flex-end;
         align-items: center;
