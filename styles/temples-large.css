@@ -11,6 +11,18 @@ body{
 		align-items: center;
 		justify-content: space-between;
 	}
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
 	nav ul {
 		justify-content: flex-end;
         align-items: center;

@@ -48,7 +48,50 @@ nav a:hover{
 .active{
     background-color: #3e270a;
     color:#f4f7fa;
+}#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: _________;
+	________;
+	________;
 }
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.open a {
+	display: block;
+}
+
 h1{
     color:#f4f7fa;
     text-align: center;
@@ -86,4 +129,8 @@ figcaption{
 
 footer{
     color:#f1f9fa;
+}
+footer p{
+    text-align: center;
+    font-size: 0.9rem;
 }
