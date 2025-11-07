@@ -16,6 +16,7 @@
 	.navigation {
 		flex-direction: row;
         background-color: #6a4819;
+        gap: 0.35rem;
 	}
 
 	.navigation a {
