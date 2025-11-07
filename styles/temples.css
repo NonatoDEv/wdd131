@@ -9,11 +9,11 @@ header, main, footer {
     max-width: 960px;
     margin: 0.75rem auto;
     padding: 1rem;
-    background-color: #282f43;
+    background-color: #3e270a;
     border: 2px solid #f4f7fa;
 }
 header {
-	background-color:#282f43 ;
+	background-color:#3e270a ;
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
@@ -25,7 +25,7 @@ header {
     color:#f4f7fa;
 }
 nav{
-    background-color: #475886;
+    background-color: #7c5717;
 }
 nav ul{
     list-style: none;
@@ -34,7 +34,7 @@ nav ul{
 }
 nav a{
     display: block;
-    color: #fff;
+    color: #f4f7fa;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -42,12 +42,12 @@ nav a{
 }
 nav a:hover{
     text-decoration: underline;
-    background-color: #b1c8df;
+    background-color: #f6f592;
     color:#000;
 }
 .active{
-    background-color: #3d4a6b;
-    color:#fff;
+    background-color: #3e270a;
+    color:#f4f7fa;
 }
 h1{
     color:#f4f7fa;
@@ -59,13 +59,19 @@ main{
 }
 section{
     padding: 1rem;
-    background-color: #dceff1;
+    background-color: #000;
 }
 .container {
     display:grid; 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     grid-gap: 25px;
     place-items: center;}
+figcaption{
+    color:#f4f7fa;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
 footer{
     color:#f1f9fa;
 }
