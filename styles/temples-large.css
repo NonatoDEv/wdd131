@@ -12,7 +12,7 @@ body{
 		justify-content: space-between;
 	}
     #menu {
-		display: none; /* hide hamburger button */
+		display: none;
 	}
 
 	.navigation {

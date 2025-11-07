@@ -9,7 +9,7 @@ const lastModifiedText = "Last modification: " + lastModifiedDate;
 lastModifiedP.innerHTML = lastModifiedText;
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
-amButton.addEventListener("_______", () => {
-	navigation._______.toggle("_______");
+amButton.addEventListener("click", () => {
+	navigation.classList.toggle("show");
 	hamButton.classList.toggle("open");
 });
