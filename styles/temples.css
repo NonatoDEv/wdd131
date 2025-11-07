@@ -6,8 +6,8 @@ body{
     font-weight: 400;
 }
 header, main, footer {
-    max-width: 480px;
-    margin: 1rem auto;
+    max-width: 960px;
+    margin: 0.75rem auto;
     padding: 1rem;
     background-color: #282f43;
     border: 2px solid #f4f7fa;
@@ -27,7 +27,28 @@ header {
 nav{
     background-color: #475886;
 }
-
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+nav a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.35rem;
+}
+nav a:hover{
+    text-decoration: underline;
+    background-color: #b1c8df;
+    color:#000;
+}
+.active{
+    background-color: #3d4a6b;
+    color:#fff;
+}
 h1{
     color:#f4f7fa;
 }
