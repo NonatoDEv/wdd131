@@ -16,14 +16,14 @@ header, main, footer {
 header {
 	background-color:#3e270a ;
 	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1rem 1fr;  
 	grid-gap: 1rem;
 	padding: 20px;
 	border: 1px solid #3e270a;
 	box-shadow: 0 0 30px;
 }
 #temple-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:#f4f7fa;
     text-align: center;
 }
@@ -51,24 +51,26 @@ nav a:hover{
 .active{
     background-color: #3e270a;
     color:#f4f7fa;
+
 }
 #menu {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
 	color: #f4f7fa;
+    grid-column: 3/4;
 }
-
 #menu::before {
 	content: "☰";
 }
-
 #menu.open::before {
 	content: "X";
 }
-
+nav{
+    grid-column: 1/4;
+}
 .navigation {
-	display: flex;
+    display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	list-style: none;
@@ -91,7 +93,7 @@ nav a:hover{
 }
 
 .open a {
-	display: block;
+	display:block;
 }
 
 h1{
