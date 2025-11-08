@@ -114,6 +114,8 @@ main{
 figure {
     background-color: #f4f7fa;
     border-radius: .5rem;
+    box-shadow: 0 0 25px;
+
 }
 img {
     border-radius:.5rem .5rem 0 0;
