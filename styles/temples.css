@@ -9,23 +9,21 @@ header, main, footer {
     max-width: 960px;
     margin: 1rem auto;
     padding: 1rem;
-    background-color: #3e270a;
+    background-color: rgb(62, 39, 10);
     border-radius: .5rem;
 }
 header {
-	background-color:#3e270a ;
 	display: grid;
     grid-template-columns: 1fr 1rem 1fr;  
 	grid-gap: 1rem;
 	padding: 20px;
-	border: 1px solid #3e270a;
 	box-shadow: 0 0 30px;
 }
 #temple-title {
     place-items: center;
     justify-items: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color:#f4f7fa;
     text-align: center;
 }
