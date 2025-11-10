@@ -69,21 +69,21 @@ nav a:hover{
 nav{
     grid-column: 1/4;
 }
-.navigation {
+.navigation{
     display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	list-style: none;
 	color: #f4f7fa;
 }
-.navigation a {
+.navigation a{
 	display: none;
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
 }
-.navigation a:hover {
+.navigation a:hover{
 	background-color: #f6f592;
 	color: #3e270a;
 	font-weight: 700;
