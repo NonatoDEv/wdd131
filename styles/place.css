@@ -64,9 +64,22 @@ header{
 h2{
     text-align: center;
 }
+.weather{
+    display: flex;
+    flex-direction: column;
+}
+.weather-icon{
+    width: 5rem;
+}
+footer{
+    background-color: var(--primary);
+}
 footer p{
     text-align: center;
+    color: var(--secondary);
 }
 footer span{
-    text-align: center;
+    padding: 0.5rem auto;
+    color: var(--secondary);
+    text-align:  center;
 }
