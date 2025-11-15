@@ -26,21 +26,40 @@ header{
     color: var(--secondary);
     padding: 1rem;
 }
+
 .hero-wrapper{
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
-    
+    grid-template-rows: 2fr 1fr;   
     background-color: var(--primary);
 }
 .hero-wrapper picture{
     grid-row: 1/2;
-    background-color: var(--primary);
+    border-radius: 0.5rem;
+    
 }
 .hero-wrapper div{
     grid-row: 2/3;
+    background-color: var(--accent);
 }
 .hero-small{
     width: 100%;
     height: auto;
+    max-width: 375px;
+    border-radius: 0.5rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+.data, .weather {
+    background-color: var(--secondary);
+    color:var(--text);
+    width: 100%;
     max-width: 599px;
+    padding: 1rem;
+    border-radius: 1rem;
 }
