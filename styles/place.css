@@ -18,7 +18,6 @@ header, main, footer{
     max-width: 1024px;
     border-radius: 0.5rem;
     margin: 1rem auto;
-    padding: 1rem;
 }
 header{
     text-align: center;
@@ -26,17 +25,14 @@ header{
     color: var(--secondary);
     padding: 1rem;
 }
-
 .hero-wrapper{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;   
-    background-color: var(--primary);
+    grid-template-rows: 1fr 1fr;   
+    margin: 0.5rem auto;
 }
 .hero-wrapper picture{
     grid-row: 1/2;
-    border-radius: 0.5rem;
-    
 }
 .hero-wrapper div{
     grid-row: 2/3;
@@ -45,7 +41,7 @@ header{
 .hero-small{
     width: 100%;
     height: auto;
-    max-width: 375px;
+    max-width: 599px;
     border-radius: 0.5rem;
 }
 .info{
@@ -54,12 +50,17 @@ header{
     align-items: center;
     gap: 2rem;
     padding: 1rem;
+    width: 410px;
+    max-width: 599px;
 }
 .data, .weather {
     background-color: var(--secondary);
     color:var(--text);
     width: 100%;
-    max-width: 599px;
+    max-width: 300px;
     padding: 1rem;
     border-radius: 1rem;
+}
+h2{
+    text-align: center;
 }
