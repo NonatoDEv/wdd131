@@ -70,6 +70,7 @@ h2{
 }
 .weather-icon{
     width: 5rem;
+    align-self: center;
 }
 footer{
     background-color: var(--primary);
