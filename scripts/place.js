@@ -1,0 +1,9 @@
+const currentYearSpan = document.getElementById("currentYear");
+const today = new Date()
+const year = today.getFullYear(); 
+const footer = "©" + year + " Powered by nonatoDev - All rights reserved ";
+currentYearSpan.innerHTML = footer;
+const lastModified = document.getElementById("lastmodified")
+const lastModifiedDate = document.lastModified
+const lastModifiedText = "Last modification: " + lastModifiedDate;
+lastModifiedP.innerHTML = lastModifiedText;
