@@ -26,3 +26,21 @@ header{
     color: var(--secondary);
     padding: 1rem;
 }
+.hero-wrapper{
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    
+    background-color: var(--primary);
+}
+.hero-wrapper picture{
+    grid-row: 1/2;
+    background-color: var(--primary);
+}
+.hero-wrapper div{
+    grid-row: 2/3;
+}
+.hero-small{
+    width: 100%;
+    height: auto;
+    max-width: 599px;
+}
