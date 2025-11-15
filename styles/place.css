@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+
+}
+:root{
+    --primary: #7a0000;
+    --secondary: #fff;
+    --accent:#cceaff;
+    --text: #000;
+    --bg-text: #cceaff;
+    --shadow: rgba(0, 0, 0, 0.15);
+}
+body{
+    font-family: "bricolage grotesque", sans-serif;
+    font-weight: 400;
+}
+header, main, footer{
+    max-width: 1024px;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+header{
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 1rem;
+}
