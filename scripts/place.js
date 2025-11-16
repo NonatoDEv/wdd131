@@ -19,13 +19,31 @@ updateCountryData({
     callingcode: ' +51',
     tld: ' .pe',
 });
+/*calculating the windchill*/
+const temp = 18 // °C
+const wind = 10 // km/h
+function calculateWindChill(t,s){
+    return 13.12 + 0.6215 * t-11.37 * Math.pow(s,0.16) + 0.3965 * t * Math.pow(s,0.16);
+}
+/*function puttingWindChill(){
+    const chillElement =document.querySelector('#windchill');
+    if(temp <= 21 && wind > 9.21){
+        chillElement.textContent = `${calculateWindChill(temp,wind).toFixed(1)} °C`;
+    }
+    else{
+        chillElement.textContent = "N/A";
+    }
+}*/
+function displayWindChill() {
+  const chillElement = document.querySelector('#windchill');
+  if (temp <= 21 && wind > 4.8) {
+    chillElement.textContent = `${calculateWindChill(temp, wind).toFixed(1)} °C`;
+  } else {
+    chillElement.textContent = "N/A";
+  }
+}
 /* get date and last modification and putting into Html*/
-const currentYearSpan = document.getElementById("currentYear");
-const today = new Date()
-const year = today.getFullYear(); 
-const footer = "©" + year + " Powered by nonatoDev - All rights reserved ";
-currentYearSpan.innerHTML = footer;
-const lastModifiedP = document.getElementById("lastModified")
-const lastModifiedDate = document.lastModified
-const lastModifiedText = "Last modification: " + lastModifiedDate;
-lastModifiedP.innerHTML = lastModifiedText;
+document.querySelector('#currentYear').textContent =`© ${new Date().getFullYear() } Powered by nonatoDev - All rights reserved`;
+document.querySelector('#lastModified').textContent = `Last Modification: ${document.lastModified}`;
+
+displayWindChill();
