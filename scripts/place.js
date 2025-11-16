@@ -35,7 +35,7 @@ function calculateWindChill(t,s){
     }
 }*/
 function displayWindChill() {
-  const chillElement = document.querySelector('#windchill');
+  const chillElement = document.querySelector('#windChill');
   if (temp <= 21 && wind > 4.8) {
     chillElement.textContent = `${calculateWindChill(temp, wind).toFixed(1)} °C`;
   } else {
