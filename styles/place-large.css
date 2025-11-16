@@ -3,7 +3,7 @@
         font-size: 2.5rem;
     }
     .info{
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.10);
         position: absolute;
         top: 0;
         left: 0;
@@ -19,13 +19,13 @@
         grid-row: 1/2;
         justify-self: start;
         align-self: start;
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(255, 255, 255, 0.25);
     }
     .weather{
         grid-column: 2/3;
         grid-row: 2/3;
         justify-self: end;
         align-self: end;
-        background-color: rgba(255, 255, 255, 0.75)
+        background-color: rgba(255, 255, 255, 0.25)
     }
 }
