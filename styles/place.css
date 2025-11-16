@@ -65,16 +65,18 @@ h2{
     padding: 1rem;
     border-radius: 1rem;
 }
-.data li strong::after{
+.data li strong::after,
+.weather p strong::after{
     content: " →";
-    color: rgb(122, 0, 0);
+    color: var(--accent);
     margin: 0 5px;
     display: inline-block;
     transition: transform 0.3s ease, color 0.3s ease;
 }
-.data li :hover strong::after{
+.data li:hover strong::after,
+.weather p:hover strong::after{
     transform: translateX(5px);
-    color: rgb(204, 234, 255);
+    color: var(--primary);
 }
 ul{
     list-style: none;
