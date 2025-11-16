@@ -25,15 +25,6 @@ const wind = 10;// km/h
 function calculateWindChill(t,s){
     return 13.12 + 0.6215 * t-11.37 * Math.pow(s,0.16) + 0.3965 * t * Math.pow(s,0.16);
 }
-/*function puttingWindChill(){
-    const chillElement =document.querySelector('#windchill');
-    if(temp <= 21 && wind > 9.21){
-        chillElement.textContent = `${calculateWindChill(temp,wind).toFixed(1)} °C`;
-    }
-    else{
-        chillElement.textContent = "N/A";
-    }
-}*/
 function displayWindChill() {
   const chillElement = document.querySelector('#windChill');
   if (temp <= 21 && wind > 4.8) {
