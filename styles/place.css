@@ -11,6 +11,7 @@
     --shadow: rgba(0, 0, 0, 0.15);
 }
 body{
+    background-color: var(--accent);
     font-family: "bricolage grotesque", sans-serif;
     font-weight: 400;
 }
@@ -53,6 +54,9 @@ h1{
     width: 410px;
     border-radius: 0.5rem;
 }
+h2{
+    text-align: center;
+}
 .data, .weather {
     background-color: var(--secondary);
     color:var(--text);
@@ -60,10 +64,17 @@ h1{
     max-width: 400px;
     padding: 1rem;
     border-radius: 1rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-h2{
-    text-align: center;
+.data li strong::after{
+    content: " →";
+    color: rgb(122, 0, 0);
+    margin: 0 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.data li :hover strong::after{
+    transform: translateX(5px);
+    color: rgb(204, 234, 255);
 }
 ul{
     list-style: none;
