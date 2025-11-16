@@ -17,6 +17,7 @@ body{
 header, main, footer{
     max-width: 1024px;
     border-radius: 0.5rem;
+    margin: 1rem auto;
 }
 header{
     text-align: center;
