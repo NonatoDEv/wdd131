@@ -65,23 +65,24 @@ h2{
     padding: 1rem;
     border-radius: 1rem;
 }
-.data li strong::after,
-.weather p strong::after{
+    .data li strong::after,
+    .weather p strong::after{
     content: " →";
     color: var(--accent);
     margin: 0 5px;
     display: inline-block;
     transition: transform 0.3s ease, color 0.3s ease;
-}
-.data li:hover,
-.weather p:hover{
+    }
+    .data li:hover,
+    .weather p:hover{
+    background-color: var(--primary);
     color: var(--secondary);
-}
-.data li:hover strong::after,
-.weather p:hover strong::after{
+    }
+    .data li:hover strong::after,
+    .weather p:hover strong::after{
     transform: translateX(5px);
-    color: var(--primary);
-}
+    color: var(--accent);
+    }
 ul{
     list-style: none;
 }
