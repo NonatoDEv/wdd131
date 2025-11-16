@@ -1,4 +1,31 @@
-.hero-wrapped{
+@media screen and (min-width:1024px){
+    h1{
+        font-size: 2rem;
+    }
+    .hero-wrapped{
     position: relative;
     width: 100%;
+    }
+    .info{
+        position: absolute;
+        top: 0;
+        left:0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        padding: 1rem;
+        gap: 0;
+    }
+    .data{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        place-items: start;
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+    .weather{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        place-items: end;
+        background-color: rgba(255, 255, 255, 0.75);
+    }
 }

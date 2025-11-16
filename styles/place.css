@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
 }
 :root{
     --primary: #7a0000;
@@ -16,7 +19,6 @@ body{
 header, main, footer{
     max-width: 1024px;
     border-radius: 0.5rem;
-    margin: 1rem auto;
 }
 header{
     text-align: center;
@@ -24,11 +26,18 @@ header{
     color: var(--secondary);
     padding: 1rem;
 }
+h1{
+    font-size: 1.5rem;
+}
+.hero{
+    margin: 0 auto;
+}
 .hero-wrapper{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;   
     margin: 0.5rem auto;
+    place-items: center;
 }
 .hero-wrapper picture{
     grid-row: 1/2;
@@ -40,8 +49,8 @@ header{
 .hero-small{
     width: 100%;
     height: auto;
-    max-width: 599px;
     border-radius: 0.5rem;
+    object-fit: cover;
 }
 .info{
     display: flex;
@@ -51,6 +60,7 @@ header{
     padding: 1rem;
     width: 410px;
     max-width: 599px;
+    border-radius: 0.5rem;
 }
 .data, .weather {
     background-color: var(--secondary);
