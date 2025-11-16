@@ -89,7 +89,7 @@ footer p{
     color: var(--secondary);
 }
 footer span{
-    padding: 0.5rem auto;
+    margin: 0.5rem auto;
     color: var(--secondary);
     text-align:  center;
 }
