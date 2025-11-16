@@ -73,6 +73,10 @@ h2{
     display: inline-block;
     transition: transform 0.3s ease, color 0.3s ease;
 }
+.data li:hover,
+.weather p:hover{
+    color: var(--secondary);
+}
 .data li:hover strong::after,
 .weather p:hover strong::after{
     transform: translateX(5px);
