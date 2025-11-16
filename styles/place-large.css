@@ -7,9 +7,9 @@
     width: 100%;
     }
     .info{
+        background-color: var(--secondary);
         position: absolute;
         top: 0;
-        left:0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows:1fr 1fr;

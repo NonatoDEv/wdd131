@@ -8,7 +8,6 @@
     --secondary: #fff;
     --accent:#cceaff;
     --text: #000;
-    --bg-text: #cceaff;
     --shadow: rgba(0, 0, 0, 0.15);
 }
 body{
@@ -36,11 +35,7 @@ h1{
     margin: 0.5rem auto;
     place-items: center;
 }
-.hero-wrapper picture{
-    grid-row: 1/2;
-}
 .hero-wrapper div{
-    grid-row: 2/3;
     background-color: var(--accent);
 }
 .hero-small{
