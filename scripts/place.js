@@ -20,8 +20,8 @@ updateCountryData({
     tld: ' .pe',
 });
 /*calculating the windchill*/
-const temp = 18 // °C
-const wind = 10 // km/h
+const temp = 18;;// °C
+const wind = 10;// km/h
 function calculateWindChill(t,s){
     return 13.12 + 0.6215 * t-11.37 * Math.pow(s,0.16) + 0.3965 * t * Math.pow(s,0.16);
 }
