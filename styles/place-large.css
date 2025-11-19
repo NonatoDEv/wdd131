@@ -28,4 +28,11 @@
         align-self: end;
         background-color: rgba(255, 255, 255, 0.25)
     }
+    .weather-icon{
+        display: none;
+    }
+    #currentYear::after {
+        content: ' 🚀';
+        margin-left: 6px;
+    }
 }

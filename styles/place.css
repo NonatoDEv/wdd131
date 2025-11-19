@@ -98,6 +98,7 @@ li{
 .weather-icon{
     width: 5rem;
     align-self: center;
+    display: inline-block;
 }
 footer{
     background-color: var(--primary);
@@ -110,4 +111,5 @@ footer span{
     margin: 0.5rem auto;
     color: var(--secondary);
     text-align:  center;
+    content: '';
 }
