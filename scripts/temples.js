@@ -9,7 +9,14 @@ const lastModifiedText = "Last modification: " + lastModifiedDate;
 lastModifiedP.innerHTML = lastModifiedText;
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
-hamButton.addEventListener("click", () => {
-	navigation.classList.toggle("open");
-	hamButton.classList.toggle("open");
-});
+if(hamButton && navigation){
+	hamButton.addEventListener('click', () => {
+    const isOpen = navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+	hamButton.setAttribute(
+      'aria-label', 
+      isOpen ? 'Open Navigation Menu' : 'Close Navigation Mennu'
+    );
+    hamButton.setAttribute('aria-expanded', isOpen);
+  });
+}

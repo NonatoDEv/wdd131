@@ -35,7 +35,7 @@ nav ul{
 }
 nav a{
     display: block;
-    color: #fbfcea;
+    color: #3e270a;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -49,8 +49,8 @@ nav a:hover{
     border-radius: .5rem;
 }
 .active{
-    background-color: #3e270a;
-    color:#f4f7fa;
+    background-color: #f6f592;
+    color:#3e270a;
 
 }
 #menu {
@@ -74,13 +74,14 @@ nav{
 	flex-direction: column;
 	justify-content: space-evenly;
 	list-style: none;
-	color: #f4f7fa;
+	color: #3e270a;
 }
 .navigation a{
 	display: none;
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
+    background-color: #6a4819;
 	color: #fff;
 }
 .navigation a:hover{
