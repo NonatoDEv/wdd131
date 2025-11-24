@@ -1,0 +1,47 @@
+@media screen and (min-width: 1025px){
+    :root{
+    --primary: #3e270a;
+    --secondary: #6a4819 ;
+    --accent: #f6f592;
+    --text: #f4f7fa ;
+    --shadow: rgba(0, 0, 0, 0.15);
+    }
+    header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+    #temple-title {
+        font-size: 2rem;
+    }
+    nav{
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    }
+    #menu {
+		display: none;
+	}
+	.navigation {
+		flex-direction: row;
+        background-color: var(--secondary);
+        gap: 0.35rem;
+        border-radius: 0.5rem;
+	}
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+        border-radius: 0.5rem;
+	}
+    .navigation a:hover{
+        border: none;
+        border-radius: 0.5rem;
+    }
+	nav ul {
+		justify-content: flex-end;
+        align-items: center;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+}
