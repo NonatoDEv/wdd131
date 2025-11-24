@@ -13,7 +13,7 @@ body{
     font-weight: 400;
 }
 header, main, footer {
-    max-width: 1024px;
+    max-width: 1440px;
     margin: 1rem auto;
     padding: 1rem;
     background-color: var(--primary);
@@ -100,15 +100,20 @@ nav{
 .open a {
 	display:block;
 }
+h2{
+    text-align: center;
+    color: var(--text);
+}
 .grid-layout{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.25rem;
     padding: 1.25rem;
 }
-.card-temple{
-    border: 2px, solid var(--accent);
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: var(--shadow);
+footer{
+    color:#f1f9fa;
+}
+footer p{
+    text-align: center;
+    font-size: 1rem;
 }
