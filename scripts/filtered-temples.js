@@ -89,6 +89,22 @@ const temples = [
     "https://churchofjesuschristtemples.org/assets/img/temples/arequipa-peru-temple/arequipa-peru-temple-7290.jpg"
   },
   {
+    templeName: "Nauvoo Illinois",
+    location: "Nauvoo, Illinois",
+    dedicated: "2002, june, 30",
+    area: 54000,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-illinois-temple/nauvoo-illinois-temple-50576.jpg"
+  },
+  {
+    templeName: "Los Olivos-Lima Peru",
+    location: "Los Olivos, Lima, Peru",
+    dedicated: "2024, January, 14",
+    area: 47413,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/lima-peru-los-olivos-temple/lima-peru-los-olivos-temple-42502.jpg"
+  },
+  {
     templeName: "Trujillo Peru",
     location: "Trujillo, Peru",
     dedicated: "2019, December, 15",
@@ -96,7 +112,6 @@ const temples = [
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/trujillo-peru-temple/trujillo-peru-temple-3712.jpg"
   }
-  // Add more temple objects here...
 ];
 
 
