@@ -72,11 +72,38 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
+  {
+    templeName: "Cochabamba Bolivia",
+    location: "Cochabamba, Bolivia",
+    dedicated: "2000, April, 30",
+    area: 35500,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/cochabamba-bolivia-temple/cochabamba-bolivia-temple-13638.jpg"
+  },
+  {
+    templeName: "Arequipa Peru",
+    location: "Arequipa, PEru",
+    dedicated: "2019, December, 15",
+    area: 26969,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/arequipa-peru-temple/arequipa-peru-temple-7290.jpg"
+  },
+  {
+    templeName: "Trujillo Peru",
+    location: "Trujillo, PEru",
+    dedicated: "2019, December, 15",
+    area: 28200,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/trujillo-peru-temple/trujillo-peru-temple-3712.jpg"
+  }
   // Add more temple objects here...
 ];
-function createTempleCard() {
-  const container = document.querySelector('.temples') || document.querySelector('#temples') || document.body;
-  temples.forEach(temple => {
+
+createTempleCard(temples);
+
+function createTempleCard(filteredTemples) {
+  document.querySelector(".grid-layout").innerHTML ="";
+  filteredTemples.forEach(temple => {
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");
@@ -91,6 +118,8 @@ function createTempleCard() {
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
     img.setAttribute("loading", "lazy");
+    img.setAttribute("width", "350")
+    img.setAttribute("height", "197")
 
     card.appendChild(img);
     card.appendChild(name);
@@ -98,6 +127,6 @@ function createTempleCard() {
     card.appendChild(dedication);
     card.appendChild(area);
 
-    container.appendChild(card);
+    document.querySelector(".grid-layout").appendChild(card);
   });
 }
