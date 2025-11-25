@@ -133,7 +133,6 @@ img{
     border-radius: 0.5rem;
     object-fit: cover;
     margin: 0.5rem;
-    box-shadow: var(--shadow);
 }
 footer{
     color:#f1f9fa;

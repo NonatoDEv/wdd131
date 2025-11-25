@@ -99,7 +99,72 @@ const temples = [
   // Add more temple objects here...
 ];
 
+
+const homeFilterBtn = document.querySelector("#home");
+const oldFilterBtn = document.querySelector("#old");
+const newFilterBtn = document.querySelector("#new");
+const smallFilterBtn = document.querySelector("#small");
+const largeFilterBtn = document.querySelector("#large");
+
 createTempleCard(temples);
+
+const classifyByDedication = (temples) => {
+  return temples.reduce((acc, temple) =>{
+    const dedicationString = temple.dedicated;
+    const yearString = dedicationString.split(',')[0].trim();
+    const year = parseInt(yearString, 10);
+    if (year <= 1900) {
+      acc.oldTemples.push(temple);
+    } else if (year >= 2000){
+      acc.newTemples.push(temple);
+    }
+    return acc;
+  }, {oldTemples: [], newTemples: []});
+};
+
+const classifyByArea = (temples) => {
+    return temples.reduce((acc, temple) => {
+        const area = temple.area; 
+        if (area <= 10000) {
+            acc.smallTemples.push(temple);
+        } else if (area >= 90000) {
+            acc.largeTemples.push(temple);
+        }
+        return acc;
+    }, { smallTemples: [], largeTemples: [] });
+};
+
+if(oldFilterBtn){
+  oldFilterBtn.addEventListener("click", (e) =>{
+    e.preventDefault();
+    const {oldTemples} = classifyByDedication(temples);
+    createTempleCard(oldTemples);
+  })
+}
+
+if(newFilterBtn){
+  newFilterBtn.addEventListener("click", (e) =>{
+    e.preventDefault();
+    const {newTemples} = classifyByDedication(temples);
+    createTempleCard(newTemples);
+  })
+}
+
+if(smallFilterBtn){
+  smallFilterBtn.addEventListener("click", (e) =>{
+    e.preventDefault();
+    const {smallTemples} = classifyByArea(temples);
+    createTempleCard(smallTemples);
+  })
+}
+
+if(largeFilterBtn){
+  largeFilterBtn.addEventListener("click", (e) =>{
+    e.preventDefault();
+    const {largeTemples} = classifyByArea(temples);
+    createTempleCard(largeTemples);
+  })
+}
 
 function createTempleCard(filteredTemples) {
   document.querySelector(".grid-layout").innerHTML ="";
@@ -129,3 +194,4 @@ function createTempleCard(filteredTemples) {
     document.querySelector(".grid-layout").appendChild(card);
   });
 }
+
