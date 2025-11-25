@@ -82,7 +82,7 @@ const temples = [
   },
   {
     templeName: "Arequipa Peru",
-    location: "Arequipa, PEru",
+    location: "Arequipa, Peru",
     dedicated: "2019, December, 15",
     area: 26969,
     imageUrl:
@@ -90,7 +90,7 @@ const temples = [
   },
   {
     templeName: "Trujillo Peru",
-    location: "Trujillo, PEru",
+    location: "Trujillo, Peru",
     dedicated: "2019, December, 15",
     area: 28200,
     imageUrl:
@@ -118,14 +118,13 @@ function createTempleCard(filteredTemples) {
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
     img.setAttribute("loading", "lazy");
-    img.setAttribute("width", "350")
-    img.setAttribute("height", "197")
+    img.setAttribute("width", "300")
 
-    card.appendChild(img);
     card.appendChild(name);
     card.appendChild(location);
     card.appendChild(dedication);
     card.appendChild(area);
+    card.appendChild(img);
 
     document.querySelector(".grid-layout").appendChild(card);
   });
