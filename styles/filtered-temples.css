@@ -89,7 +89,7 @@ nav{
 	text-align: center;
 	text-decoration: none;
     background-color: var(--secondary);
-	color: #fff;
+	color: var(--text);
 }
 .navigation a:hover{
 	background-color: var(--accent);
