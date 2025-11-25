@@ -114,7 +114,6 @@ const temples = [
   }
 ];
 
-
 const homeFilterBtn = document.querySelector("#home");
 const oldFilterBtn = document.querySelector("#old");
 const newFilterBtn = document.querySelector("#new");
@@ -179,6 +178,13 @@ if(largeFilterBtn){
     const {largeTemples} = classifyByArea(temples);
     createTempleCard(largeTemples);
   })
+}
+
+if(homeFilterBtn) {
+    homeFilterBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        createTempleCard(temples);
+    });
 }
 
 function createTempleCard(filteredTemples) {
