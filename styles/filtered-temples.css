@@ -65,6 +65,7 @@ nav a:hover{
 	border: 0;
 	background-color: var(--primary);
 	color: var(--text);
+ 
     grid-column: 3/4;
 }
 #menu::before {
