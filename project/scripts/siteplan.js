@@ -1,0 +1,1 @@
+document.querySelector('#currentYear').textContent =`© ${new Date().getFullYear() } Powered by nonatoDev - All rights reserved`;
