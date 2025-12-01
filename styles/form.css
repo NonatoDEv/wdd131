@@ -50,40 +50,49 @@ main{
 }
 .stars-rating{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; 
     justify-content: space-between;
     max-width: 250px;
     margin: 0 auto;
     position: relative;
-
 }
 .stars-rating input{
     display: none;
 }
 .stars-rating > label {
-  width: 30px;
-  height: 30px;
-  font-family: Arial;
-  font-size: 30px;
-  transition: 0.2s ease;
-  color: #ffa500;
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: #ffa500;
 }
-.stars-rating label:hover {
-  color: #ff69b4;
-  transition: 0.2s ease;
-}
-.stars-rating label:active::before {
-  transform:scale(1.1);
-}
+
 .stars-rating label::before {
-  content: '\2606';
-  position: absolute;
-  top: 0px;
-  line-height: 26px;
-  transition: 0.2s ease;
+    content: '\2606'; 
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+    transition: 0.2s ease;
 }
-.stars-rating input:checked ~ label:before {
-  content:'\2605';
+
+.stars-rating input:checked ~ label::before,
+.stars-rating input:checked ~ label {
+    content: '\2605';
+    color: #ffa500; 
+}
+
+.stars-rating label:hover,
+.stars-rating label:hover ~ label {
+    color: #ff69b4;
+}
+.stars-rating label:hover::before,
+.stars-rating label:hover ~ label::before {
+    content: '\2605'; 
+}
+
+.stars-rating label:active::before {
+    transform:scale(1.1);
 }
 @-moz-document url-prefix() {
   .stars-rating input:checked ~ label:before {
