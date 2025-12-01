@@ -4,7 +4,6 @@
     --background: #F9F9F9;
     --text: #000;
     --accent-text: #cc0000;
-    --support-text: #0033CC;
     --font-family: 'poppins', sans-serif;
 }
 body{
@@ -40,7 +39,7 @@ main{
     padding: 0.5rem 2%;
 }
 .form1 legend{
-    color: var(--support-text);
+    color: var(--text);
     padding: 0 0.5rem;
 }
 .form1 label{
