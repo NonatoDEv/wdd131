@@ -3,39 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product review</title>
     <meta name="Author" content="Abel Jesus Nonato Avalos">
     <meta name="Description" content="an HTML form with a confirmation page">
     <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js"></script>
+    <script defer src="scripts/form.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Product review</h1>
     </header>
     <main>
-        <form action="get" method="review.html">
+        <form action="get" method="review.html" class="form1">
             <fieldset>
                 <legend>Product name</legend>
-                <label for="">Choose a product
-                    <select name="subject" id="pName" required>
-                    <option value="" disabled selected>Select a product</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    </select>
+                <label>Choose a product
+                    <select name="subject" id="pName" required></select>
                 </label>
             </fieldset>
+            <fieldset>
+                <legend>Overall rating</legend>
+                <label>
+                <div class="stars-rating">
+	            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+	            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+	            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+	            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+	            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Date of installation</legend>
+                <label><input type="date" id="" name="" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>With features did you find useful in the product?</legend>
+                <legend>(check all that apply)</legend>
+                <label>
+                <input type="checkbox" id="feature1" name="feature1" value="feature1">durability<br>
+                <input type="checkbox" id="feature2" name="feature2" value="feature2">Easy to use<br>
+                <input type="checkbox" id="feature3" name="feature3" value="feature3">Performance<br>
+                <input type="checkbox" id="feature4" name="feature4" value="feature4">Design<br>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Written review(optional)</legend>
+                <label><textarea id="review" name="review" rows="6" cols="46" placeholder="Write your review here..."></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Your name(Optional)</legend>
+                <label><input type="text" id="name" name="name" placeholder="Your name"></label>
+            </fieldset>
+            <input type="submit" value="Post review">
         </form>
     </main>
     <footer>
         <p>
-            <span></span>
+            <span id="currentYear"></span>
         </p>
-        <p></p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
