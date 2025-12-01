@@ -31,16 +31,7 @@ const products = [
 
 function populateProductDropdown() {
   const productSelect = document.getElementById('productName'); 
-    productSelect.innerHTML = "";
-
-    const placeholderOption = document.createElement('option');
-    placeholderOption.textContent = "Choose a product...";
-    placeholderOption.value = "";
-    placeholderOption.disabled = true; 
-    placeholderOption.selected = true;
-
-    productSelect.appendChild(placeholderOption);
-
+    
     products.forEach(product => {
         const optionElement = document.createElement('option');
         optionElement.textContent = product.name;
