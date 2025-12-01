@@ -66,7 +66,7 @@ main{
   font-family: Arial;
   font-size: 30px;
   transition: 0.2s ease;
-  color: orange;
+  color: #ffa500;
 }
 .stars-rating label:hover {
   color: #ff69b4;
