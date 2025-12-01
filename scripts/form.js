@@ -30,7 +30,7 @@ const products = [
 ];
 
 function populateProductDropdown() {
-  const productSelect = document.getElementById('pName'); 
+  const productSelect = document.getElementById('productName'); 
     productSelect.innerHTML = "";
 
     const placeholderOption = document.createElement('option');
