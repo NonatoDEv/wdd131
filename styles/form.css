@@ -112,3 +112,10 @@ main{
 footer p{
     font-size: 0.75rem;
 }
+@media (min-width: 1025px) and (max-width: 1280px){
+    body{
+        width: 100vw;
+        max-width: 1280px;
+        padding: 0;
+    }
+}
