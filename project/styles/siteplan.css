@@ -1,14 +1,14 @@
+*{
+    box-sizing: border-box;
+}
 :root{
     --bg-primary: #ffffff;
     --bg-secondary: #FFB3E2;
     --text: #7A0054;
 }
-*{
-    box-sizing: border-box;
-}
 body{
     font-family: 'Architects daughter', 'Quicksand', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
 }
 header, main, footer{
     max-width: 1280px;

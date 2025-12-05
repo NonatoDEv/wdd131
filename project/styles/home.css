@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #FFB3E2;
+    --text: #7A0054;
+}
+body { 
+    font-family: 'Architects daughter', 'Quicksand', sans-serif;
+    font-weight: 400;
+    margin: 0; 
+    padding: 0;
+    background-color: var(--bg-primary);
+    color: var(--text); 
+}
+
+.iso-logo {
+    width: 75px;
+    height: auto;
+    grid-column: 1/2;
+}
+.main-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-primary); 
+    box-shadow: 0 2px 5px rgba(122, 0, 84, 0.2);
+}
+#menu{
+    font-size: 1.5rem;
+    grid-column: 3/4;
+    cursor:pointer;
+    padding: 0.5rem 1rem;
+    border: 0;
+    color: var(--text); 
+    background-color: transparent;
+}        
+#menu::before{
+    content: "☰";
+}
+#menu.open::before{
+    content: "✖";  
+}
+nav{
+    grid-column: 1/4;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-secondary);
+}
+.navigation a {
+    display: none; 
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--bg-secondary);
+    color: var(--text); 
+    border-bottom: 1px solid var(--text);
+}
+.navigation a:hover {
+    background-color: var(--text);
+    color: var(--bg-primary);
+    font-weight: 700;
+    border: 2px solid var(--text);
+}
+.open a {
+    display: block; 
+}
+
+main {
+    color: var(--text);
+}
+
+section {
+    padding: 60px 20px;
+    margin-bottom: 20px;
+}
+
+.products h2, 
+.testimonials h2,
+#about-title,
+#location-title { 
+    font-size: 2em; 
+    margin-bottom: 30px; 
+    color: var(--text); 
+} 
+.hero { 
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    padding: 80px 20px; 
+    text-align: center; 
+}
+.hero h1 { 
+    font-size: 2.5em;   
+    color: var(--text); 
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto; 
+} 
+.btn-cta {   
+    background-color: var(--bg-secondary); 
+    color: var(--text); 
+    padding: 12px 30px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    display: inline-block; 
+    margin-top: 20px;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--text);
+}
+.btn-cta:hover { 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(122, 0, 84, 0.4); 
+}
+
+.product-item { 
+    width: 250px; 
+    height: 250px; 
+    
+    background-color: var(--bg-secondary); 
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    border: 1px solid var(--text);
+}
+
+.products .btn-cta {
+    background-color: var(--text);
+    color: var(--bg-primary); 
+    border: none;
+}
+.products .btn-cta:hover {
+    background-color: #5d0042; 
+}
+
+.about-summary {
+    
+    background-color: #f7f7f7;
+}
+.about-content img { 
+    
+    box-shadow: 0 4px 10px rgba(122, 0, 84, 0.15);
+}
+.about-summary .btn-cta {
+    background-color: var(--bg-secondary);
+    color: var(--text);
+}
+
+blockquote { 
+    background-color: var(--bg-primary);
+    padding: 20px;
+    
+    border-left: 4px solid var(--bg-secondary);
+    margin: 10px;
+}
+.map-section { 
+    
+    background-color: #f3f3f3; 
+}
+.map-placeholder { 
+    background-color: var(--bg-secondary); 
+    color: var(--text);
+    border: 2px dashed var(--text); 
+}
+
+.map-section .btn-cta {
+    background-color: var(--text); 
+    color: var(--bg-primary);
+}  
+#mainFooter { 
+    background-color: var(--text); 
+    color: var(--bg-primary); 
+    padding: 40px 20px; 
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    gap: 15px; 
+}
+
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer-links a { 
+    color: #ccc; 
+    text-decoration: none; 
+    padding: 5px 0;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover { 
+    color: var(--bg-secondary); 
+}
+.footer-subscribe-block form { 
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-subscribe-block input[type="email"] { 
+    padding: 10px; 
+    width: 250px; 
+    border: none; 
+    border-radius: 4px;
+}
+
+.footer-subscribe-block button { 
+    background-color: var(--bg-secondary); 
+    color: var(--text);
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.footer-subscribe-block button:hover {
+    background-color: #f794d4;
+}    
+        

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abel J. Nonato Avalos">
+    <meta name="description" content="Welcome to Baby Lucy, your local store for high-quality baby clothing and essentials. Discover our curated selection designed to provide comfort and style for your little one.">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script defer src="scripts/home.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Baby Lucy</title>
+</head>
+<body>
+    <header role="banner" class="main-header">
+       <div>
+            <a href="home.html" class="logo-link" aria-label="Go to Homepage">
+                <img class="iso-logo" src="images/baby-lucy.webp" alt="Name of the store">
+            </a>
+       </div>
+       <button id="menu" class="menu-toggle" aria-controls="main-nav" aria-expanded="false" type="button"></button>
+       <nav id="main-nav" aria-label="Main Navigation">
+            <ul class="navigation">
+                <li><a href="home.html">home</a></li>
+                <li><a href="#">store</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
+       </nav>
+    </header>
+    <main role="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title">¡Descubre la Magia de Nuestro Rincón Local!</h1>
+            <p>Tu tienda de <strong>Ropa de bebes</strong> recién inaugurada en el corazón de la ciudad de chincha. Calidad, cariño y atención única.</p>
+            <a href="productos.html" class="btn-cta" aria-label="Ver productos destacados">Ver Productos Destacados</a>
+        </section>
+        <section class="products" aria-labelledby="products-title">
+            <h2 id="products-title">✨ Nuestros Productos Más Populares</h2>
+            <p>Una breve muestra de lo que te espera. ¡Pasa y descúbrelo todo!</p>
+            <div class="product-carousel" role="list">
+                <article class="product-item" role="listitem">
+                    <img src="producto1.jpg" alt="Nombre del Producto 1 - Descripción breve" loading="lazy">
+                </article>
+                <article class="product-item" role="listitem">
+                    <img src="producto2.jpg" alt="Nombre del Producto 2 - Descripción breve" loading="lazy">
+                </article>
+                <article class="product-item" role="listitem">
+                    <img src="producto3.jpg" alt="Nombre del Producto 3 - Descripción breve" loading="lazy">
+                </article>
+            </div>
+            <a href="productos.html" class="btn-cta"  aria-label="Ver catálogo completo de productos">Ver Todos los Productos</a>
+        </section>
+        <section class="about-summary" aria-labelledby="about-title">
+            <div class="about-content">
+                <img src="imagen-ambiente.jpg" alt="Interior acogedor de nuestra tienda en Chincha" loading="lazy">
+                <div class="about-text">
+                    <h2 id="about-title">Tu Lugar de Bienestar y Compras</h2>
+                    <p>Más que una tienda, un espacio diseñado con cariño para que te sientas como en casa. Ven y disfruta de una atmósfera única mientras exploras nuestros productos cuidadosamente seleccionados.</p>
+                    <a href="nosotros-contacto.html" class="btn-cta"  aria-label="Conocer más sobre nosotros">Conoce Nuestra Historia</a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" aria-labelledby="testimonials-title">
+            <h2 id="testimonials-title">Lo que Dicen Nuestros Clientes</h2>
+            <div>
+                <blockquote itemscope itemtype="https://schema.org/Review">
+                    <p itemprop="reviewBody">"¡Excelente atención y productos únicos! Definitivamente volveré pronto."</p>
+                    <footer>— <cite itemprop="author">Ana M.</cite></footer>
+                    <meta itemprop="reviewRating" content="5">
+                </blockquote>
+                <blockquote itemscope itemtype="https://schema.org/Review">
+                    <p itemprop="reviewBody">"Me encanta el ambiente acogedor. El mejor lugar para encontrar regalos especiales."</p>
+                    <footer>— <cite itemprop="author">Juan P.</cite></footer>
+                    <meta itemprop="reviewRating" content="5">
+                </blockquote>
+            </div>
+        </section>
+        <section class="map-section" aria-labelledby="location-title">
+            <h2 id="location-title">📍 Visítanos Hoy</h2>
+            <p>Estamos ubicados en <strong>Pasaje Oeste Puesto 2-B, Mercado Abastos Chincha</strong>. ¡Consulta nuestro horario!</p>
+            <div class="map-placeholder" role="img" aria-label="Mapa de ubicación">
+                <p>[Mapa Interactivo de Google Maps - Inserta iframe aquí]</p>
+            </div>
+            <a href="#" class="btn-cta"  aria-label="Ver indicaciones para llegar">Ver Cómo Llegar</a>
+        </section>
+    </main>
+    <footer id="mainFooter" ></footer> 
+</body>
+</html>

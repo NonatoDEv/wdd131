@@ -1,0 +1,46 @@
+@media screen and (min-width: 1025px) {
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 80px; 
+    }
+    #menu {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row; 
+        gap: 50px;
+        padding: 0;
+        margin: 0; 
+    }
+    
+    .navigation a {
+        display: block;
+        padding: 5px 0;
+        border-bottom: 2px solid var(--bg-secondary); 
+        color: var(--text); 
+        background-color: transparent;
+    }
+    
+    .iso-logo {
+        width: 120px;
+    }
+    #mainFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 50px 80px; 
+    }
+    .footer-links {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .footer-subscribe-block form {
+        flex-direction: row; 
+    }
+    .footer-subscribe-block input[type="email"]{
+        width: auto; 
+        min-width: 200px;
+    }
+}
