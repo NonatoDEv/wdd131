@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abel J. Nonato Avalos">
+    <meta name="description" content="Welcome to Baby Lucy, your local store for high-quality baby clothing and essentials. Discover our curated selection designed to provide comfort and style for your little one.">
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/site-large.css">
+    <script type="module" defer src="scripts/site.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Baby Lucy Home</title>
+</head>
+<body>
+    <header role="banner" class="main-header">
+       <div>
+            <a href="site.html" class="logo-link" aria-label="Go to Homepage">
+                <img class="iso-logo" src="images/baby-lucy.webp" alt="Name of the store">
+            </a>
+       </div>
+       <button id="menu" class="menu-toggle" aria-controls="main-nav" aria-expanded="false" type="button"></button>
+       <nav id="main-nav" aria-label="Main Navigation">
+            <ul class="navigation">
+                <li><a href="site.html">home</a></li>
+                <li><a href="products.html">store</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
+       </nav>
+    </header>
+    <main role="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title">Explore the Charm of Our Local Shop!</h1>
+            <p>Your new baby <strong>clothing boutique</strong>, freshly opened in the heart of Chincha. Expect unique quality and exceptional service.</p>
+            <a href="productos.html" class="btn-cta-hero" aria-label="Ver productos destacados">View Our Featured Collection</a>
+        </section>
+        <section class="products" aria-labelledby="products-title">
+            <h2 id="products-title">Customer Favorites</h2>
+            <p>A little sneak peek of what awaits you. Come on in and discover it all!</p>
+            <div class="carousel-wrapper"> 
+                <div class="product-carousel" id="product-carousel" role="list">
+                </div>
+            </div>
+            <a href="products.html" class="btn-cta-products"  aria-label="View our full product catalog">View Our Featured Collection</a>
+        </section>
+        <section class="about-summary" aria-labelledby="about-title">
+            <div class="about-content">
+                <picture>
+                    <source media="(max-width: 1024px)" srcset="images/baby-lucy-inside-small.webp" >
+                    <source media="(min-width: 1025px)" srcset="images/baby-lucy-banner-large.webp">
+                    <img src="images/baby-lucy-inside.webp" alt="The Warm and Welcoming Interior of Our Chincha Store" loading="lazy">
+                </picture>
+                <div class="about-text">
+                    <h2 id="about-title">Your Happy Place for Little Ones</h2>
+                    <p>This is more than a store—it's a cozy, carefully curated space designed for your comfort, wherever you are. But for the full, unique experience, we invite you to pop over and visit us in the heart of Chincha!</p>
+                    <a href="#" class="btn-cta-about"  aria-label="Learn more about us">Our history</a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" aria-labelledby="testimonials-title">
+            <h2 id="testimonials-title">What Our Happy Customers Are Saying</h2>
+            <div>
+                <blockquote itemscope itemtype="https://schema.org/Review">
+                    <p itemprop="reviewBody">"¡Excelente atención y productos únicos! Definitivamente volveré pronto."</p>
+                    <footer>— <cite itemprop="author">Ana M.</cite></footer>
+                    <meta itemprop="reviewRating" content="5">
+                </blockquote>
+                <blockquote itemscope itemtype="https://schema.org/Review">
+                    <p itemprop="reviewBody">"Me encanta el ambiente acogedor. El mejor lugar para encontrar regalos especiales."</p>
+                    <footer>— <cite itemprop="author">Juan P.</cite></footer>
+                    <meta itemprop="reviewRating" content="5">
+                </blockquote>
+            </div>
+        </section>
+        <section class="map-section" aria-labelledby="location-title">
+        <div class="map-placeholder">
+            <div class="map-info">
+                <h2 id="location-title">Visit us Today!</h2>
+                <p><strong>Pasaje Oeste Puesto 2-B, Mercado Abastos Chincha</strong></p>
+                <p><a href="#" class="hours-link">View Hours!</a></p> 
+            </div>
+            <div class="map-embed-wrapper" role="img" aria-label="Mapa de ubicación de la tienda">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3880.928076668702!2d-76.137137!3d-13.416779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110168be34ed24f%3A0x6c4c642b3cd8bd85!2sBaby%20Lucy%20clothes%20%26%20accesories!5e0!3m2!1ses-419!2spe!4v1765030111801!5m2!1ses-419!2spe"
+                title="Mapa de la ubicación de la tienda Baby Lucy en Chincha"
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+            <a href="#" class="btn-cta-map" aria-label="Ver indicaciones para llegar a la tienda">Get Directions</a>
+            </div>
+        </section>
+    </main>
+    <footer id="mainFooter" ></footer> 
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 function toggleMenu() {
     const menuButton = document.getElementById('menu');
     const navList = document.querySelector('.navigation');

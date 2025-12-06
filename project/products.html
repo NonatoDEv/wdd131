@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/site-large.css">
+    <script defer src="scripts/products.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="author" content="Abel J. Nonato Avalos">
+    <meta name="description" content="Discover Baby Lucy's delightful range of baby clothing and essentials. From cozy onesies to stylish outfits, find everything you need to keep your little one comfortable and fashionable.">
+    <title>Baby Lucy products</title>
+</head>
+<body>
+    <header role="banner" class="main-header">
+       <div>
+            <a href="site.html" class="logo-link" aria-label="Go to Homepage">
+                <img class="iso-logo" src="images/baby-lucy.webp" alt="Name of the store">
+            </a>
+       </div>
+       <button id="menu" class="menu-toggle" aria-controls="main-nav" aria-expanded="false" type="button"></button>
+       <nav id="main-nav" aria-label="Main Navigation">
+            <ul class="navigation">
+                <li><a href="site.html">home</a></li>
+                <li><a href="products.html">store</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
+       </nav>
+    </header>
+      <main>
+        <h2>products</h2>
+        <nav class="filter-nav" aria-label="Filter Products by Category">
+        <button id="filter-all" class="filter-btn active" data-category="all">All</button>
+        <button id="filter-ropa" class="filter-btn" data-category="ropa">Ropa</button>
+        <button id="filter-accesorios" class="filter-btn" data-category="accesorios">Accesorios</button>
+        <button id="filter-cuidado" class="filter-btn" data-category="cuidado">Cuidado</button>
+        </nav>
+        <div class="grid-layout">
+        </div>      
+    </main>
+    <footer id="mainFooter" ></footer>
+</body>
+</html>
