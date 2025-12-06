@@ -139,7 +139,8 @@ section {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    text-align: center; 
 }
 .product-item img {
     width: 100%;
@@ -165,6 +166,9 @@ section {
 .about-summary {
     background-color: #f7f7f7;
     padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .about-content img { 
     width: 100%;
@@ -183,6 +187,7 @@ section {
     font-weight: bold;
     transition: transform 0.3s, box-shadow 0.3s;
     border: 1px solid var(--text);
+    align-self: flex-end;
 }
 
 blockquote { 
@@ -203,6 +208,8 @@ blockquote {
     border: 3px solid var(--bg-secondary);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .map-info{
     padding: 1.25rem 1.5rem 0.75rem 1.25rem;
@@ -227,6 +234,7 @@ blockquote {
 .map-section .btn-cta-map  {
     background-color: var(--text); 
     color: var(--bg-primary); 
+    width: auto;
     padding: 12px 30px; 
     text-decoration: none; 
     border-radius: 5px; 
@@ -235,6 +243,7 @@ blockquote {
     font-weight: bold;
     transition: transform 0.3s, box-shadow 0.3s;
     border: 1px solid var(--text);
+    align-self: center;   
 
 }
 #mainFooter { 
@@ -248,8 +257,6 @@ blockquote {
     text-align: center; 
     gap: 15px; 
 }
-
-
 .footer-links {
     display: flex;
     flex-direction: column;
