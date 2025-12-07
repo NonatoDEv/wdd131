@@ -59,7 +59,7 @@ const displayProducts = (products) => {
                         min="1" 
                         max="10"
                         aria-label="Quantity for ${product.name}">
-                    <button class="btn-add" data-id="${product.id}
+                    <button class="btn-add" data-id="${product.id}"
                     aria-label="Add ${product.name} to cart"">Add</button>
             </div>
         </article>
