@@ -89,13 +89,54 @@ nav {
     color: var(--bg-primary);
     font-weight: 700;
 }
+.cart-item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.clear-cart-btn {
+    background-color: var(--bg-secondary);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+.clear-cart-btn.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+.clear-cart-btn:hover {
+    background-color: var(--bg-primary);
+    transform: scale(1.1);
+}
+.clear-cart-btn:active {
+    transform: scale(0.95);
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.clear-cart-btn:hover {
+    animation: shake 0.3s ease;
+}
 .cart-indicator {
     position: relative;
     font-size: 1.5rem;
     cursor: pointer;
 }
 #cart-count {
-    background-color: #ff4757; 
+    background-color: var(--text); 
     color: var(--bg-primary); 
     font-size: 0.8rem;
     font-weight: bold;

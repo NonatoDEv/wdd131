@@ -5,7 +5,7 @@ let cart = [];
 const container = document.getElementById('products-container');
 const filterButtons = document.querySelectorAll('.filter-btn');
 const cartCountElement = document.getElementById('cart-count');
-
+const clearCartBtn = document.getElementById('clear-cart-btn');
 // hambutton nav Menu
 function toggleMenu() {
     const menuButton = document.getElementById('menu');
@@ -25,11 +25,31 @@ function updateCartCount() {
     if (cartCountElement) {
         cartCountElement.textContent = cart.length;
         
+        localStorage.setItem('babyLucyCart', JSON.stringify(cart));
+        if (clearCartBtn) {
+            if (cart.length > 0) {
+                clearCartBtn.classList.add('visible');
+            } else {
+                clearCartBtn.classList.remove('visible');
+            }
+        }
+
         cartCountElement.classList.add('bump');
         setTimeout(() => cartCountElement.classList.remove('bump'), 300);
     }
 }
 
+// Functions to clear the cart
+function clearCart() {
+    const confirClean = confirm(`Are you sure you want to remove all ${cart.length} items from your cart?`);
+    
+    if (confirClean) {
+        cart = [];
+        localStorage.removeItem('babyLucyCart');
+        updateCartCount();
+        alert('Cart cleared successfully!');
+    }
+}
 //Main function = show products
 const displayProducts = (products) => {
     if (products.length === 0) {
@@ -102,7 +122,7 @@ function activateAddButtons() {
     });
 }
 
-//functions to filtre products
+//functions to filter products
 filterButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
         filterButtons.forEach(button => button.classList.remove('active'));
@@ -144,7 +164,15 @@ if (footerElement) {
 
 // get Start
 document.addEventListener('DOMContentLoaded', () => {
+    const savedCart = localStorage.getItem('babyLucyCart');
+    if (savedCart) {
+        cart = JSON.parse(savedCart);
+    }
     toggleMenu();
     displayProducts(allProducts);
     updateCartCount()
+    if (clearCartBtn) {
+        clearCartBtn.addEventListener('click', clearCart);
+    }
+
 });
