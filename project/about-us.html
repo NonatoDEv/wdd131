@@ -7,82 +7,131 @@
     <meta name="description" content="Welcome to Baby Lucy, your local store for high-quality baby clothing and essentials. Discover our curated selection designed to provide comfort and style for your little one.">
     <link rel="stylesheet" href="styles/site.css">
     <link rel="stylesheet" href="styles/site-large.css">
+    <link rel="stylesheet" href="styles/about-us.css">
     <script type="module" defer src="scripts/site.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Baby Lucy-About Us</title>
 </head>
-<body>
+    <body>
         <header role="banner" class="main-header">
-       <div>
+        <div>
             <a href="site.html" class="logo-link" aria-label="Go to Homepage">
                 <img class="iso-logo" src="images/baby-lucy.webp" alt="Name of the store">
             </a>
-       </div>
-       <button id="menu" class="menu-toggle" aria-label="toogle menu" aria-controls="main-nav" aria-expanded="false" type="button"></button>
-       <nav id="main-nav" aria-label="Main Navigation">
+        </div>
+        <button id="menu" class="menu-toggle" aria-label="toogle menu" aria-controls="main-nav" aria-expanded="false" type="button"></button>
+        <nav id="main-nav" aria-label="Main Navigation">
             <ul class="navigation">
                 <li><a href="site.html">home</a></li>
                 <li><a href="products.html">store</a></li>
                 <li><a href="about-us.html">About us</a></li>
                 <li><a href="#">blog</a></li>
             </ul>
-       </nav>
+        </nav>
     </header>
     <main class="about-container">
-        <section class="about-hero">
-            <h1>Welcome to the Baby Lucy Family</h1>
-            <p>Weaving love into every little outfit.</p>
-        </section>
-        <section class="story-section">
-            <div class="text-content">
-                <h2>How it all started</h2>
+    <section class="about-hero">
+        <h1>Weaving Love into Every Stitch</h1>
+        <p class="hero-subtitle">From our family to yours.</p>
+    </section>
+    <section class="legacy-section">
+        <div class="legacy-content">
+            <div class="legacy-text">
+                <h2>Honoring a Legacy of Love</h2>  
+                <p class="dedication-intro">
+                    Baby Lucy is more than a store; it is a tribute to a legacy that began in <strong>1996</strong> with my mother, <strong>Luzarmenia</strong>. 
+                </p>
                 <p>
-                Baby Lucy isn't just a store; it's a dream that grew alongside our family. 
-                When our son was born, we realized... [Aquí cuentas la historia de tu esposa y el bebé].
+                    She founded this business with dedication and a simple belief: that every baby deserves to be wrapped in love and quality. She taught us that baby clothes are more than just fabric—they are the wrapper for your most precious memories.
+                </p>
+                <p>
+                    Though she is no longer with us, her spirit remains the foundation of everything we do. To honor her memory and the light she brought into our lives, we named our daughter <strong>Lucy</strong>—a reflection of her name and her enduring warmth.
+                </p>
+                <p>
+                    Today, my wife and I continue what she started. We carefully select every piece in our collection, guided by the values she taught us: <strong>integrity, care, and family</strong>.
                 </p>
             </div>
-            <div class="image-content">
-                <img src="./images/about-story.webp" alt="Our beginnings" loading="lazy" width="500" height="400">
-            </div>
-        </section>
-        <section class="values-section">
-            <h2>Why Choose Us?</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <span class="icon">🧸</span>
-                    <h3>Soft Fabrics</h3>
-                    <p>Gentle on sensitive skin.</p>
-                </div>
-                <div class="value-card">
-                    <span class="icon">✨</span>
-                    <h3>Made to Last</h3>
-                    <p>Quality that survives playtime.</p>
-                </div>
-                <div class="value-card">
-                    <span class="icon">❤️</span>
-                    <h3>Family Owned</h3>
-                    <p>Personal attention from our family to yours.</p>
+            <div class="legacy-image-wrapper">
+                <img 
+                    src="./images/luzarmenia-and-me.webp" 
+                    alt="Luzarmenia in her shop, 1996" 
+                    class="legacy-photo"
+                    loading="lazy"
+                    width="500"
+                    height="600"
+                >
+                <div class="photo-caption">
+                    <span>In loving memory of Luzarmenia (1996)</span>
                 </div>
             </div>
-        </section>
-        <section class="founders-section">
-            <div class="image-content">
-                <img src="./images/owners.webp" alt="The founders of Baby Lucy" loading="lazy" width="500" height="400">
+        </div>
+    </section>
+    <section class="founders-section">
+        <div class="founders-content">
+            <div class="founders-image-wrapper">
+                <img 
+                    src="images/abel-and-erika.webp" 
+                    alt="The husband and wife team behind Baby Lucy" 
+                    class="founders-photo"
+                    loading="lazy"
+                    width="500"
+                    height="500"
+                >
+                <div class="photo-caption">
+                    <span>Keeping the dream alive, together.</span>
+                </div>
             </div>
-            <div class="text-content">
-                <h2>Meet the Team</h2>
+            <div class="founders-text">
+                <h2>Meet the New Generation</h2>
                 <p>
-                Hi! We are the faces behind the screen. My wife curates the style, 
-                and I write the code (and change diapers!). We are committed to giving you the best experience.
+                    Hi! We are the proud parents behind Baby Lucy. While honoring the past is vital, building the future is our passion.
                 </p>
+                <p>
+                    <strong>My Wife</strong> is the heart of the store. With her "mom instinct," she hand-picks every garment, asking one simple question: <em>"Would I dress Lucy in this?"</em> If the answer isn't a resounding yes, it doesn't make it to our shelves.
+                </p>
+                <p>
+                    <strong>And I am Abel</strong>. I work behind the scenes to make sure your shopping experience is smooth and easy. From writing the code for this website to packing your orders with care, I ensure the legacy runs strong.
+                </p>
+                <p>
+                    Together, we promise you the same warmth and dedication my mother started back in '96. Thank you for letting us be part of your family's journey.
+                </p>
+                <div class="signature">
+                    <p>
+                        With love, <br>
+                        The Baby Lucy Family
+                    </p>
+                </div>
             </div>
-        </section>
-        <section class="about-cta">
+        </div>
+    </section>
+    <section class="values-section">
+        <div class="value-card">
+            <span class="value-icon">✨</span>
+            <h3>Tradition</h3>
+            <p>Nearly 30 years of experience.</p>
+        </div>
+        <div class="value-card">
+            <span class="value-icon">🧸</span>
+            <h3>Quality</h3>
+            <p>Curated by a mom, for moms.</p>
+        </div>
+        <div class="value-card">
+            <span class="value-icon">❤️</span>
+            <h3>Family</h3>
+            <p>Personal attention in every order.</p>
+        </div>
+    </section>
+    <section class="cta-section">
+        <div class="cta-content">
             <h2>Ready to dress your little one?</h2>
-            <a href="products.html" class="btn-primary">Shop Collection</a>
-        </section>
+            <p>Explore the collection inspired by our family's legacy.</p>
+            <a href="products.html" class="btn-shop-cta" aria-label="Go to store and view products">
+                Visit the Store 
+            </a>
+        </div>
+    </section>
     </main>
     <footer id="mainFooter" ></footer>
 </body>

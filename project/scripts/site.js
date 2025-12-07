@@ -41,11 +41,6 @@ document.addEventListener('DOMContentLoaded', toggleMenu);
 
 const footerContent = `
 <p><strong>Hours:</strong> Monday to Saturday | 08:00 AM - 7:00 PM</p>
-<nav class="footer-links" aria-label="Legal and navigation links">
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms and conditions</a>
-    <a href="references.html">Sources references</a> 
-</nav>
 <div class="footer-subscribe-block">
     <p><strong>Sign up now and enjoy 10% off your first purchase!</strong></p>
     <form action="/subscribe" method="GET" aria-label="Subscription form">
