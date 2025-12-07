@@ -60,7 +60,7 @@ const displayProducts = (products) => {
                         max="10"
                         aria-label="Quantity for ${product.name}">
                     <button class="btn-add" data-id="${product.id}"
-                    aria-label="Add ${product.name} to cart"">Add</button>
+                    aria-label="Add ${product.name} to cart">Add</button>
             </div>
         </article>
     `).join('');
