@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         productArticle.setAttribute('role', 'listitem');
 
         const productHTML = `
-            <a href="#">
+            <a href="products.html" class="carousel-link" aria-label="Go to store">
                 <img 
                     src="${product.src}" 
                     alt="${product.alt}" 

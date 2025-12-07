@@ -127,20 +127,31 @@ section {
 .product-carousel {
     display: flex; 
     gap: 15px; 
-    overflow-x: auto; 
-    scroll-snap-type: x mandatory; 
-    scrollbar-width: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;     
     padding-bottom: 20px; 
- }
+    width: 100%;   
+}
+.product-carousel::-webkit-scrollbar {
+    display: none;
+}
 .product-item {
-    min-width: 75%; 
-    scroll-snap-align: center;
-    background-color:var(--bg-primary);
+    min-width: 75%;
+    scroll-snap-align: center; 
+    background-color: var(--bg-primary);
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
     text-align: center; 
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease; 
+}
+.product-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 .product-item img {
     width: 100%;
@@ -148,6 +159,12 @@ section {
     object-fit: cover; 
     border-radius: 8px;
     margin-bottom: 8px;
+    display: block;
+}
+.product-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 .products .btn-cta-products {
     background-color: var(--text);
@@ -155,16 +172,17 @@ section {
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    display: inline-block;
+    display:block;
+    width: fit-content;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 20px;
+    margin:20px auto;
 }
-.products .btn-cta-products :hover {
-    background-color: #5d0042; 
+.products .btn-cta-products:hover {
+    background-color: var(--text); 
 }
 .about-summary {
-    background-color: #f7f7f7;
+    background-color: var(--bg-primary);
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
@@ -197,12 +215,19 @@ blockquote {
     border-left: 4px solid var(--bg-secondary);
     margin: 10px;
 }
+
 .map-section { 
     display: flex;
-    margin: 0 2rem;
+    justify-content: center; 
+    padding: 0 1rem;         
+    margin-bottom: 40px;     
 }
+
+
 .map-placeholder { 
-    margin: 40px auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
     background-color: var(--bg-primary);
     border-radius: 1rem;
     border: 3px solid var(--bg-secondary);
@@ -211,27 +236,37 @@ blockquote {
     display: flex;
     flex-direction: column;
 }
-.map-info{
-    padding: 1.25rem 1.5rem 0.75rem 1.25rem;
+.map-info {
+    padding: 1.5rem;
     text-align: center;
 }
-.map-info h2{
+.map-info h2 {
     font-size: 1.75rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: var(--text);
+    font-family: 'Architects Daughter', cursive;
+}
 
+.map-info p {
+    margin: 5px 0;
+}
+
+.hours-link {
+    color: var(--bg-secondary); 
+    font-weight: bold;
+    text-decoration: none;
 }
 .map-embed-wrapper {
     width: 100%;
 }
-.map-embed-wrapper iframe {
+.map-embed-wrapper img {
     width: 100%;
-    max-width: 600px;
-    height: 400px;
-    border: none;
-    display:flex;
+    height: auto;
+    min-height: 250px;
+    object-fit: cover;
+    display: block;
 }
-.map-section .btn-cta-map  {
+.map-section .btn-cta-map {
     background-color: var(--text); 
     color: var(--bg-primary); 
     width: auto;
@@ -239,12 +274,18 @@ blockquote {
     text-decoration: none; 
     border-radius: 5px; 
     display: inline-block; 
-    margin-top: 20px;
     font-weight: bold;
     transition: transform 0.3s, box-shadow 0.3s;
     border: 1px solid var(--text);
     align-self: center;   
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 
+.map-section .btn-cta-map:hover {
+    background-color: var(--bg-secondary);
+    color: var(--text);
+    transform: translateY(-2px);
 }
 #mainFooter { 
     background-color: var(--text); 
@@ -256,21 +297,6 @@ blockquote {
     align-items: center; 
     text-align: center; 
     gap: 15px; 
-}
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.footer-links a { 
-    color: #ccc; 
-    text-decoration: none; 
-    padding: 5px 0;
-    transition: color 0.2s;
-}
-
-.footer-links a:hover { 
-    color: var(--bg-secondary); 
 }
 .footer-subscribe-block form { 
     margin-top: 15px;

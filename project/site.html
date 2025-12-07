@@ -26,7 +26,6 @@
                 <li><a href="site.html">home</a></li>
                 <li><a href="products.html">store</a></li>
                 <li><a href="about-us.html">About us</a></li>
-                <li><a href="#">blog</a></li>
             </ul>
        </nav>
     </header>
@@ -82,18 +81,18 @@
                 <p><a href="#" class="hours-link">View Hours!</a></p> 
             </div>
             <div class="map-embed-wrapper" role="img" aria-label="Mapa de ubicación de la tienda">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3880.928076668702!2d-76.137137!3d-13.416779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110168be34ed24f%3A0x6c4c642b3cd8bd85!2sBaby%20Lucy%20clothes%20%26%20accesories!5e0!3m2!1ses-419!2spe!4v1765030111801!5m2!1ses-419!2spe"
-                title="Mapa de la ubicación de la tienda Baby Lucy en Chincha"
-                width="100%" 
-                height="400" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+                <picture>
+                    <source media="(max-width: 1024px)" srcset="images/baby-lucy-map-mobile.webp">
+                    <source media="(min-width: 1025px)" srcset="images/baby-lucy-map-desktop.webp">
+                    <img src="images/baby-lucy-map-mobile.webp" alt="a map picture of baby lucy store for mobiles." loading="lazy">
+                </picture>
             </div>
-            <a href="#" class="btn-cta-map" aria-label="Ver indicaciones para llegar a la tienda">Get Directions</a>
+            <a  href="https://www.google.com/maps/search/?api=1&query=Baby+Lucy&query_place_id=ChIJT9JO44sWEJERhb3YPCtkTGw" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn-cta-map" 
+                aria-label="Ver indicaciones en Google Maps para llegar a la tienda">
+                Get Directions</a>
             </div>
         </section>
     </main>
