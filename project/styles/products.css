@@ -14,7 +14,7 @@ body {
     background-color: var(--bg-primary);
     color: var(--text); 
 }
-p{
+p {
     font-family: 'Quicksand', sans-serif;
 }
 .iso-logo {
@@ -30,56 +30,201 @@ p{
     background-color: var(--bg-primary); 
     box-shadow: 0 2px 5px rgba(122, 0, 84, 0.2);
 }
-#menu{
+#menu {
     font-size: 1.5rem;
     grid-column: 3/4;
-    cursor:pointer;
+    cursor: pointer;
     padding: 0.5rem 1rem;
     border: 0;
     color: var(--text); 
     background-color: transparent;
+    display: block;
 }        
-#menu::before{
+
+#menu::before {
     content: "☰";
 }
-#menu.open::before{
+
+#menu.open::before {
     content: "✖";  
 }
-nav{
+nav {
     grid-column: 1/4;
 }
-.navigation{
+.navigation {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     list-style: none;
     padding: 0;
     margin: 0;
     background-color: var(--bg-secondary);
+    transition: max-height 0.3s ease-out;
 }
-.navigation a {
-    display: none; 
-    padding: 1rem;
+.navigation li {
+    display: none;
     text-align: center;
-    text-decoration: none;
-    background-color: var(--bg-secondary);
-    color: var(--text); 
     border-bottom: 1px solid var(--text);
 }
-.navigation a:hover {
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--text); 
+}
+.navigation .cart-item {
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.navigation.open li {
+    display: block; 
+}
+.navigation.open .cart-item {
+    display: flex;
+}
+
+.navigation a:hover, 
+.navigation .cart-item:hover {
     background-color: var(--text);
     color: var(--bg-primary);
     font-weight: 700;
-    border: 2px solid var(--text);
 }
-.open a {
-    display: block; 
+.cart-indicator {
+    position: relative;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#cart-count {
+    background-color: #ff4757; 
+    color: var(--bg-primary); 
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%; 
+    position: absolute;
+    top: -5px;
+    right: -10px;
 }
 .grid-layout{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.25rem;
     padding: 1.25rem;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+#products-container {
+    min-height: 500px;
+}
+.products-container h2{
+    text-align: center;
+    margin-bottom: 20px
+}
+.filter-nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
+    flex-wrap: wrap;
+    padding-right: 15px; 
+    margin-bottom: 30px;
+}
+.filter-btn{
+    background-color: transparent;
+    color: var(--text); 
+    border: 1px solid var(--text);
+    text-align: center;
+    padding: 0.75rem 1.5rem; 
+    border-radius: 1.5rem; 
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease
+}
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--text);
+    color: var(--bg-primary);
+}
+.product-card{
+    background-color: var(--bg-primary);
+    border: 1px solid #eee;
+    border-radius: 1rem;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    border-color: var(--color-primary);
+}
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 1px solid var(--bg-primary);
+}
+.product-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+.product-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: var(--text);
+}
+.product-info .price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--bg-secondary);
+    margin-bottom: 20px; 
+}
+.product-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+    align-items: center;
+}
+.qty-input {
+    width: 50px;
+    padding: 8px;
+    border: 1px solid var(--bg-primary);
+    border-radius: 8px;
+    text-align: center;  
+    font-size: 1rem;
+    color: var(--text);
+    outline: none;   
+    transition: border-color 0.3s;
+}
+.qty-input:focus {
+    border-color:var(--bg-secondary); 
+}
+.btn-add {
+    background-color: var(--text);
+    color: var(--bg-primary);           
+    border: none;            
+    padding: 10px 20px;     
+    border-radius: 8px;      
+    cursor: pointer;         
+    font-weight: 600;        
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.btn-add:hover {
+    background-color: var(--bg-secondary);
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+}
+.btn-add:active {
+    transform: translateY(0);
 }
 #mainFooter { 
     background-color: var(--text); 
@@ -133,5 +278,51 @@ nav{
 }
 
 .footer-subscribe-block button:hover {
-    background-color: #f794d4;
+    background-color: var(--bg-secondary);
+}
+
+@media screen and (min-width: 1025px) {
+    #menu {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: var(--bg-secondary);
+        height: auto;
+    }
+    .navigation li {
+        display: block; 
+        border-bottom: none;
+        margin-left: 20px;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+    .navigation .cart-item {
+        display: flex;
+        padding: 0;
+        align-items: center;
+    }
+    .products-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .products-container h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .filter-menu {
+        display: flex;
+        justify-content: center;
+        width: 100%;             
+        max-width: 800px;       
+        margin-bottom: 40px;     
+    }
 }
