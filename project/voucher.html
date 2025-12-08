@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/site-large.css">
+    <link rel="stylesheet" href="styles/voucher.css">
+    <script type="module" defer src="scripts/site.js"></script>
+    <script defer src="scripts/voucher.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Baby Lucy Voucher</title>
+</head>
+<body>
+    <header role="banner" class="main-header">
+       <div>
+            <a href="site.html" class="logo-link" aria-label="Go to Homepage">
+                <img class="iso-logo" src="images/baby-lucy.webp" alt="Name of the store">
+            </a>
+       </div>
+       <button id="menu" class="menu-toggle" aria-label="toogle menu" aria-controls="main-nav" aria-expanded="false" type="button"></button>
+       <nav id="main-nav" aria-label="Main Navigation">
+            <ul class="navigation">
+                <li><a href="site.html">home</a></li>
+                <li><a href="products.html">store</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="form.html">Contact us</a></li>
+            </ul>
+       </nav>
+    </header>
+    <main class="voucher-body">
+    <div class="coupon-card">
+        <span class="confetti">🎉</span>
+        <h1>Welcome to the Family!</h1>
+        <p>Thanks for subscribing. Here is your special gift for your little one.</p>
+        <div class="discount-code" id="coupon" title="Click to copy">
+            BABYLUCY10
+        </div>
+        <p id="copy-msg" >
+            Click the code to copy!
+        </p>
+        <a href="products.html" class="btn-back-shop">Go Shopping</a>
+    </div>
+    </main>
+    <footer id="mainFooter"></footer>
+</body>
+</html>

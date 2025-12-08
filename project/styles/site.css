@@ -250,12 +250,6 @@ blockquote {
 .map-info p {
     margin: 5px 0;
 }
-
-.hours-link {
-    color: var(--bg-secondary); 
-    font-weight: bold;
-    text-decoration: none;
-}
 .map-embed-wrapper {
     width: 100%;
 }
