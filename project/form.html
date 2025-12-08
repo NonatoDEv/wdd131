@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abel J. Nonato Avalos">
+    <meta name="description" content="Welcome to Baby Lucy, your local store for high-quality baby clothing and essentials. Discover our curated selection designed to provide comfort and style for your little one.">
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/site-large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script type="module" defer src="scripts/site.js"></script>
+    <script defer src="scripts/form.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Contact-us</title>
+</head>
+<body>
+    <header role="banner" class="main-header">
+       <div>
+            <a href="site.html" class="logo-link" aria-label="Go to Homepage">
+                <img class="iso-logo" src="images/baby-lucy.webp" alt="Name of the store">
+            </a>
+       </div>
+       <button id="menu" class="menu-toggle" aria-label="toogle menu" aria-controls="main-nav" aria-expanded="false" type="button"></button>
+       <nav id="main-nav" aria-label="Main Navigation">
+            <ul class="navigation">
+                <li><a href="site.html">home</a></li>
+                <li><a href="products.html">store</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="form.html">Contact us</a></li>
+            </ul>
+       </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+        <div class="form-wrapper" id="form-container">
+            <h2>Questions? Contact us</h2>
+            <form id="contact-form" class="baby-form">
+                <div class="form-group">
+                    <label for="client-name">Name</label>
+                    <input type="text" id="client-name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="client-email">Email</label>
+                    <input type="email" id="client-email" required placeholder="youremail@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="client-message">Message</label>
+                    <textarea id="client-message" rows="4" required placeholder="tell us...."></textarea>
+                </div>
+                <button type="submit" id="submit-btn" class="btn-submit">
+                    <span id="btn-text">Send message</span>
+                </button>
+            </form>
+        </div>
+        </section>
+    </main>
+    <footer id="mainFooter" ></footer>
+</body>
+</html>

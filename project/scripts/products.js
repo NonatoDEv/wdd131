@@ -143,18 +143,33 @@ const footerContent = `
 <p><strong>Hours:</strong> Monday to Saturday | 08:00 AM - 7:00 PM</p>
 <div class="footer-subscribe-block">
     <p><strong>Sign up now and enjoy 10% off your first purchase!</strong></p>
-    <form action="/subscribe" method="GET" aria-label="Subscription form">
+    <form id="subscribeForm" aria-label="Subscription form">
         <input type="email" name="email" placeholder="Your email address" required aria-label="email address">
         <button type="submit">Subscribe</button>
     </form>
 </div>
-<p class="footer-text-spacing">&copy; ${new Date().getFullYear()} Baby Lucy. all rights reserved.</p>
-<p>powered by Abel J. Nonato Avalos</p>
+<p class="footer-text-spacing">&copy; ${new Date().getFullYear()} Baby Lucy. All rights reserved.</p>
+<p>Powered by Abel J. Nonato Avalos</p>
 <p>Last updated: ${document.lastModified}</p>
 `;
+
 const footerElement = document.getElementById('mainFooter');
+
 if (footerElement) {
+    
     footerElement.innerHTML = footerContent;
+
+    const subForm = document.getElementById('subscribeForm');
+    
+    if (subForm) {
+        subForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const email = subForm.querySelector('input[type="email"]').value;
+            localStorage.setItem('subscriberEmail', email)
+            window.location.href = 'voucher.html'; 
+        });
+    }
 }
 
 // get Start
